@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="/dist/css/Style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>SPLITTER</h2>
+    <div class="calculator">
+      <div class="sub_cal">
+        <div class="cal1 cal">
+          <h3>Bill</h3>
+          <div class="input_cal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              class="btn1"
+            >
+              <path
+                d="M15.999 8.5h2c0-2.837-2.755-4.131-5-4.429V2h-2v2.071c-2.245.298-5 1.592-5 4.429 0 2.706 2.666 4.113 5 4.43v4.97c-1.448-.251-3-1.024-3-2.4h-2c0 2.589 2.425 4.119 5 4.436V22h2v-2.07c2.245-.298 5-1.593 5-4.43s-2.755-4.131-5-4.429V6.1c1.33.239 3 .941 3 2.4zm-8 0c0-1.459 1.67-2.161 3-2.4v4.799c-1.371-.253-3-1.002-3-2.399zm8 7c0 1.459-1.67 2.161-3 2.4v-4.8c1.33.239 3 .941 3 2.4z"
+              ></path>
+            </svg>
+            <input type="text" class="bill1" />
+          </div>
+        </div>
+        <div class="cal2 cal">
+          <h3>Select Tip %</h3>
+          <div class="btns">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <button class="cstm_btn">Custom</button>
+          </div>
+        </div>
+        <div class="cal3 cal">
+          <h3 for="">Number of People</h3>
+          <div class="input_cal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              style="fill: rgba(0, 0, 0, 1)"
+              class="btn2"
+            >
+              <path
+                d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+              ></path>
+            </svg>
+            <input type="text" autofocus class="bill2" />
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <div class="total1">
+          <div class="tips">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </div>
+          <h5 class="tip_amount">0</h5>
+        </div>
+        <div class="total1">
+          <div class="tips">
+            <h4>Total</h4>
+            <p>/ person</p>
+          </div>
+          <h5 class="tip_person">0</h5>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
